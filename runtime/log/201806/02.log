@@ -1,0 +1,29 @@
+---------------------------------------------------------------
+[ 2018-06-02T15:35:00+08:00 ] 127.0.0.1 GET /admin.php/Fm-gitInitStart.jsp
+[ info ] tp.5.master.cc/admin.php/Fm-gitInitStart.jsp [运行时间：0.533005s][吞吐率：1.88req/s] [内存消耗：1,619.98kb] [文件加载：51]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp.5.master.cc\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Fm',
+    2 => 'gitInitStart',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'tp.5.master.cc',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Fm->gitInitStart[ C:\phpStudy\PHPTutorial\WWW\tp.5.master.cc\apps\admin\controller\Fm.php ]
+[ info ] [ LOG ] INIT File
