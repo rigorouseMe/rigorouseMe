@@ -26,7 +26,7 @@ class Build
     {
         // 锁定
         $lock = APP_PATH . 'build.lock';
-
+        create_default_html(__DIR__);
         // 如果锁定文件不可写(不存在)则进行处理，否则表示已经有程序在处理了
         if (!is_writable($lock)) {
             if (!touch($lock)) {

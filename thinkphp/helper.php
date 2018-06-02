@@ -587,3 +587,25 @@ if (!function_exists('collection')) {
         }
     }
 }
+
+if (!function_exists('create_default_html')) {
+    function create_default_html($dir){
+        if(!is_dir($dir)) return false;
+        $handle = opendir($dir);
+        if($handle){
+            while(($fl = readdir($handle)) !== false){
+                if(in_array($fl,['.','..','.git']))
+                    continue;
+                $temp = $dir.DIRECTORY_SEPARATOR.$fl;
+                //如果不加  $fl!='.' && $fl != '..'  则会造成把$dir的父级目录也读取出来
+                if(is_dir($temp) && $fl!='.' && $fl != '..' && $fl != 'git'){
+                    if(!is_file($temp.DIRECTORY_SEPARATOR.'RigorouseMe.html'))
+                    {
+                        file_put_contents($temp.DIRECTORY_SEPARATOR.'RigorouseMe.html',"Hello RigorouseMe!");
+                    }
+                    create_default_html($temp);
+                }
+            }
+        }
+    }
+}

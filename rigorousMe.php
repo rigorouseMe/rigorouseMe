@@ -13,6 +13,7 @@
 define('DS', DIRECTORY_SEPARATOR);//当前系统的目录分隔符
 define('__EXT',"<br/>\n");//当前系统的目录分隔符
 define('APP_PATH',__DIR__.'/apps/');//应用目录
+define('ROOT_PATH',dirname(realpath(APP_PATH)).DS);
 define('BACKUP_PATH',__DIR__.'/backup/');//应用目录
 define('BASE_URL',"http://".$_SERVER['HTTP_HOST']);//项目线上地址
 define('URL_HTML_SUFFIX','jsp');//URL伪静态后缀

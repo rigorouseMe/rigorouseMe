@@ -13,9 +13,10 @@
 if (version_compare("5.5", PHP_VERSION, ">")) {
     die("PHP 5.5 or greater is required!!!");
 }
-die("File is Error");
 //额外配置
 require __DIR__.DIRECTORY_SEPARATOR.'rigorousMe.php';
+echo ROOT_PATH.__EXT;
+die("File is Error");
 define('BIND_MODULE','index');
 //开始运行
 require __DIR__.DS.'thinkphp'.DS.'start.php';
